@@ -1,0 +1,18 @@
+{
+    "answers": {
+        "request001": {
+            "result": true,
+            "relevance": {
+                "2": 1.0,
+                "0": 0.5
+            }
+        },
+        "request002": {
+            "result": true,
+            "3": 1.0
+        },
+        "request003": {
+            "result": false
+        }
+    }
+}

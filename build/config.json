@@ -1,0 +1,13 @@
+{
+    "config": {
+        "name": "ITBoxSearchEngine",
+        "version": "0.1",
+        "max_responses": 5
+    },
+    "files": [
+        "resources\\capacitor.txt",
+        "resources\\inductor.txt",
+        "resources\\resistor.txt",
+        "resources\\transistor.txt"
+    ]
+}

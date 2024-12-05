@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake
+C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/ExternalProject.cmake
+C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake
+C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake
+C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake
+C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/CMakeLists.txt
+C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/config.cmake.in
+C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/nlohmann_jsonConfigVersion.cmake.in
+C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/pkg-config.pc.in

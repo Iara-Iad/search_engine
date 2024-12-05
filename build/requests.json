@@ -1,0 +1,7 @@
+{
+    "requests": [
+        "resistor",
+        "FET",
+        "eleven"
+    ]
+}

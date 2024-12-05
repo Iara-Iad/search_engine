@@ -1,0 +1,118 @@
+#include <iostream>
+#include <fstream>
+#include "converterJSON.h"
+#include "nlohmann/json.hpp"
+
+const char* noConfigFileException::what() const noexcept {
+    return "Config file is missing";
+}
+
+const char* emptyConfigFieldException::what() const noexcept {
+    return "Config file is empty";
+}
+
+ConverterJSON::ConverterJSON() {
+    std::ifstream configFile("config.json");
+    if (!configFile.is_open()) {
+        throw noConfigFileException();
+    } else {
+        nlohmann::json configParameters;
+        configFile >> configParameters;
+        if(configParameters["config"].is_null()) {
+            throw emptyConfigFieldException();
+        }
+    }
+}
+
+std::vector<std::string> ConverterJSON::getTextDocuments() {
+    std::ifstream configFile("config.json");
+    std::vector<std::string> resourceFilesContent;
+    nlohmann::json configParameters;
+    configFile >> configParameters;
+    
+    for (int i = 0; i < configParameters["files"].size(); i++) {
+        std::string path = configParameters["files"][i];
+        std::ifstream textFile(path);
+
+        if(textFile.is_open()) {
+            std::string currentFileContent;
+            textFile.seekg (0, textFile.end);
+            int length = textFile.tellg();
+            textFile.seekg (0, textFile.beg);
+            char * buffer = new char [length];
+            textFile.read(buffer, length);
+            currentFileContent.assign(buffer, length);
+            delete[] buffer;
+            resourceFilesContent.push_back(currentFileContent);
+            textFile.close();
+        }
+    }
+
+    configFile.close();
+    return resourceFilesContent;
+}
+
+std::string ConverterJSON::getName() {
+    std::ifstream configFile("config.json");
+    nlohmann::json configParameters;
+    configFile >> configParameters;
+    configFile.close();
+    return configParameters["config"]["name"];
+}
+
+int ConverterJSON::getResponsesLimit() {
+    std::ifstream configFile("config.json");
+    nlohmann::json configParameters;
+    configFile >> configParameters;
+
+    if(configParameters["config"]["max_responses"].is_null()) {
+        configFile.close();
+        return 5;
+    }
+
+    configFile.close();
+    return configParameters["config"]["max_responses"];
+}
+
+std::vector<std::string> ConverterJSON::getRequests() {
+    std::ifstream requestsFile("requests.json");
+    std::vector<std::string> requestsList;
+
+    if (requestsFile.is_open()) {
+        nlohmann::json requests;
+        requestsFile >> requests;
+
+        for (int i = 0; i < requests["requests"].size(); i++) {
+            requestsList.push_back(requests["requests"][i]);
+        }
+
+    }
+    requestsFile.close();
+    return requestsList;
+}
+
+void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>>answers) {
+    std::ofstream answersFile("answers.json");
+    if (answersFile.is_open()) {
+        nlohmann::ordered_json answersDict;
+
+        for (int i = 0; i < answers.size(); i++) {
+
+            if (answers[i].empty()) {
+                answersDict["answers"]["request00" + std::to_string(i + 1)]["result"] = false;
+            } else {
+                answersDict["answers"]["request00" + std::to_string(i + 1)]["result"] = true;
+                
+                for (int j = 0; j < answers[i].size(); j++) {
+                    if (answers[i].size() == 1) {
+                        answersDict["answers"]["request00" + std::to_string(i + 1)][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
+                    } else {
+                        answersDict["answers"]["request00" + std::to_string(i + 1)]["relevance"][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
+                    }
+                }
+            }
+        }
+
+        answersFile << std::setw(4) << answersDict;
+    }
+}
