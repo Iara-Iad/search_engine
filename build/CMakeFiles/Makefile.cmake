@@ -61,6 +61,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/config.cmake.in"
   "C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/nlohmann_jsonConfigVersion.cmake.in"
   "C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/pkg-config.pc.in"
+  "C:/develVSCode/cpp-projects/searchEngine/src/CMakeLists.txt"
+  "C:/develVSCode/cpp-projects/searchEngine/tests/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -73,10 +75,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/googletest-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "nlohmann_json/nlohmann_json.pc"
-  "nlohmann_json/nlohmann_jsonConfigVersion.cmake"
-  "nlohmann_json/nlohmann_jsonConfig.cmake"
-  "nlohmann_json/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/googletest/generated/gmock.pc"
   "_deps/googletest-build/googletest/generated/gmock_main.pc"
@@ -86,13 +84,20 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/googletest-build/googletest/generated/gtest.pc"
   "_deps/googletest-build/googletest/generated/gtest_main.pc"
   "_deps/googletest-build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "nlohmann_json/nlohmann_json.pc"
+  "nlohmann_json/nlohmann_jsonConfigVersion.cmake"
+  "nlohmann_json/nlohmann_jsonConfig.cmake"
+  "nlohmann_json/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/search_engine.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "src/CMakeFiles/search_engine.dir/DependInfo.cmake"
+  "tests/CMakeFiles/GtestTests.dir/DependInfo.cmake"
   )

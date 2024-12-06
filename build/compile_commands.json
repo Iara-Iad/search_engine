@@ -1,35 +1,5 @@
 [
 {
-  "directory": "C:/develVSCode/cpp-projects/searchEngine/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\main.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\main.cpp",
-  "file": "C:/develVSCode/cpp-projects/searchEngine/main.cpp",
-  "output": "CMakeFiles/search_engine.dir/main.cpp.obj"
-},
-{
-  "directory": "C:/develVSCode/cpp-projects/searchEngine/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\converterJSON.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\converterJSON.cpp",
-  "file": "C:/develVSCode/cpp-projects/searchEngine/converterJSON.cpp",
-  "output": "CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
-},
-{
-  "directory": "C:/develVSCode/cpp-projects/searchEngine/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\invertedIndex.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\invertedIndex.cpp",
-  "file": "C:/develVSCode/cpp-projects/searchEngine/invertedIndex.cpp",
-  "output": "CMakeFiles/search_engine.dir/invertedIndex.cpp.obj"
-},
-{
-  "directory": "C:/develVSCode/cpp-projects/searchEngine/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\searchServer.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\searchServer.cpp",
-  "file": "C:/develVSCode/cpp-projects/searchEngine/searchServer.cpp",
-  "output": "CMakeFiles/search_engine.dir/searchServer.cpp.obj"
-},
-{
-  "directory": "C:/develVSCode/cpp-projects/searchEngine/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\tests.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\tests.cpp",
-  "file": "C:/develVSCode/cpp-projects/searchEngine/tests.cpp",
-  "output": "CMakeFiles/search_engine.dir/tests.cpp.obj"
-},
-{
   "directory": "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-build/googlemock",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\build\\_deps\\googletest-src\\googlemock\\src\\gmock-all.cc",
   "file": "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
@@ -52,5 +22,59 @@
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\build\\_deps\\googletest-src\\googletest\\src\\gtest_main.cc",
   "file": "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\converterJSON.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\src\\converterJSON.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/src/converterJSON.cpp",
+  "output": "src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\searchServer.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\src\\searchServer.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/src/searchServer.cpp",
+  "output": "src/CMakeFiles/search_engine.dir/searchServer.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\invertedIndex.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\src\\invertedIndex.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/src/invertedIndex.cpp",
+  "output": "src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/search_engine.dir/includes_CXX.rsp -g -o CMakeFiles\\search_engine.dir\\main.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\src\\main.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/src/main.cpp",
+  "output": "src/CMakeFiles/search_engine.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/GtestTests.dir/includes_CXX.rsp -g -o CMakeFiles\\GtestTests.dir\\invertedIndex_test.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\tests\\invertedIndex_test.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/tests/invertedIndex_test.cpp",
+  "output": "tests/CMakeFiles/GtestTests.dir/invertedIndex_test.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/GtestTests.dir/includes_CXX.rsp -g -o CMakeFiles\\GtestTests.dir\\searchServer_test.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\tests\\searchServer_test.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/tests/searchServer_test.cpp",
+  "output": "tests/CMakeFiles/GtestTests.dir/searchServer_test.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/GtestTests.dir/includes_CXX.rsp -g -o CMakeFiles\\GtestTests.dir\\__\\src\\invertedIndex.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\src\\invertedIndex.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/src/invertedIndex.cpp",
+  "output": "tests/CMakeFiles/GtestTests.dir/__/src/invertedIndex.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/GtestTests.dir/includes_CXX.rsp -g -o CMakeFiles\\GtestTests.dir\\__\\src\\searchServer.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\src\\searchServer.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/src/searchServer.cpp",
+  "output": "tests/CMakeFiles/GtestTests.dir/__/src/searchServer.cpp.obj"
+},
+{
+  "directory": "C:/develVSCode/cpp-projects/searchEngine/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/GtestTests.dir/includes_CXX.rsp -g -o CMakeFiles\\GtestTests.dir\\__\\src\\converterJSON.cpp.obj -c C:\\develVSCode\\cpp-projects\\searchEngine\\src\\converterJSON.cpp",
+  "file": "C:/develVSCode/cpp-projects/searchEngine/src/converterJSON.cpp",
+  "output": "tests/CMakeFiles/GtestTests.dir/__/src/converterJSON.cpp.obj"
 }
 ]

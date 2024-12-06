@@ -4,6 +4,7 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-include("C:/develVSCode/cpp-projects/searchEngine/build/search_engine[1]_include.cmake")
-subdirs("nlohmann_json")
 subdirs("_deps/googletest-build")
+subdirs("src")
+subdirs("tests")
+subdirs("nlohmann_json")

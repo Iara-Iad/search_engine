@@ -39,8 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/develVSCode/cpp-projects/searchEngine/build/nlohmann_json/cmake_install.cmake")
   include("C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-build/cmake_install.cmake")
+  include("C:/develVSCode/cpp-projects/searchEngine/build/src/cmake_install.cmake")
+  include("C:/develVSCode/cpp-projects/searchEngine/build/tests/cmake_install.cmake")
+  include("C:/develVSCode/cpp-projects/searchEngine/build/nlohmann_json/cmake_install.cmake")
 
 endif()
 

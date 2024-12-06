@@ -363,6 +363,15 @@ JSON_MultipleHeaders:BOOL=ON
 JSON_SystemInclude:BOOL=OFF
 
 //Value Computed by CMake
+Project_BINARY_DIR:STATIC=C:/develVSCode/cpp-projects/searchEngine/build
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=C:/develVSCode/cpp-projects/searchEngine
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-build/googlemock
 
 //Value Computed by CMake
@@ -407,8 +416,6 @@ gtest_build_tests:BOOL=OFF
 //Disable uses of pthreads in gtest.
 gtest_disable_pthreads:BOOL=OFF
 
-//Use shared (DLL) run-time lib even when Google Test is built
-// as static lib.
 gtest_force_shared_crt:BOOL=ON
 
 //Build gtest with internal symbols hidden in shared libraries.
@@ -574,7 +581,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -141,14 +141,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles C:\develVSCode\cpp-projects\searchEngine\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles C:\develVSCode\cpp-projects\searchEngine\build\src\\CMakeFiles\progress.marks
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,96 +157,128 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named gmock
+# Convenience name for target.
+src/CMakeFiles/search_engine.dir/rule:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/search_engine.dir/rule
+.PHONY : src/CMakeFiles/search_engine.dir/rule
 
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named search_engine
-
-# Build rule for target.
-search_engine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 search_engine
+# Convenience name for target.
+search_engine: src/CMakeFiles/search_engine.dir/rule
 .PHONY : search_engine
 
 # fast build rule for target.
 search_engine/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/build
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/build
 .PHONY : search_engine/fast
 
-#=============================================================================
-# Target rules for targets named GtestTests
+converterJSON.obj: converterJSON.cpp.obj
+.PHONY : converterJSON.obj
 
-# Build rule for target.
-GtestTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 GtestTests
-.PHONY : GtestTests
+# target to build an object file
+converterJSON.cpp.obj:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj
+.PHONY : converterJSON.cpp.obj
 
-# fast build rule for target.
-GtestTests/fast:
-	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\GtestTests.dir\build.make tests/CMakeFiles/GtestTests.dir/build
-.PHONY : GtestTests/fast
+converterJSON.i: converterJSON.cpp.i
+.PHONY : converterJSON.i
+
+# target to preprocess a source file
+converterJSON.cpp.i:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.i
+.PHONY : converterJSON.cpp.i
+
+converterJSON.s: converterJSON.cpp.s
+.PHONY : converterJSON.s
+
+# target to generate assembly for a file
+converterJSON.cpp.s:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.s
+.PHONY : converterJSON.cpp.s
+
+invertedIndex.obj: invertedIndex.cpp.obj
+.PHONY : invertedIndex.obj
+
+# target to build an object file
+invertedIndex.cpp.obj:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj
+.PHONY : invertedIndex.cpp.obj
+
+invertedIndex.i: invertedIndex.cpp.i
+.PHONY : invertedIndex.i
+
+# target to preprocess a source file
+invertedIndex.cpp.i:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.i
+.PHONY : invertedIndex.cpp.i
+
+invertedIndex.s: invertedIndex.cpp.s
+.PHONY : invertedIndex.s
+
+# target to generate assembly for a file
+invertedIndex.cpp.s:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.s
+.PHONY : invertedIndex.cpp.s
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+searchServer.obj: searchServer.cpp.obj
+.PHONY : searchServer.obj
+
+# target to build an object file
+searchServer.cpp.obj:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.obj
+.PHONY : searchServer.cpp.obj
+
+searchServer.i: searchServer.cpp.i
+.PHONY : searchServer.i
+
+# target to preprocess a source file
+searchServer.cpp.i:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.i
+.PHONY : searchServer.cpp.i
+
+searchServer.s: searchServer.cpp.s
+.PHONY : searchServer.s
+
+# target to generate assembly for a file
+searchServer.cpp.s:
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.s
+.PHONY : searchServer.cpp.s
 
 # Help Target
 help:
@@ -261,12 +293,19 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... GtestTests
-	@echo ... gmock
-	@echo ... gmock_main
-	@echo ... gtest
-	@echo ... gtest_main
 	@echo ... search_engine
+	@echo ... converterJSON.obj
+	@echo ... converterJSON.i
+	@echo ... converterJSON.s
+	@echo ... invertedIndex.obj
+	@echo ... invertedIndex.i
+	@echo ... invertedIndex.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... searchServer.obj
+	@echo ... searchServer.i
+	@echo ... searchServer.s
 .PHONY : help
 
 
@@ -278,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
