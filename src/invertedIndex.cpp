@@ -38,12 +38,7 @@ void updateWithOneDoc(std::string doc, int docIndex, InvertedIndex* ptr) {
     }
 }
 
-void InvertedIndex:: updateDocumentBase(std::vector<std::string> inputDocs) {
-    if(inputDocs.empty()) {
-        std::cerr << "No documents\n";
-        return;
-    }
-    
+void InvertedIndex:: updateDocumentBase(std::vector<std::string> inputDocs) {   
     std::vector<std::thread> threads;
     for (int i = 0; i < inputDocs.size(); i++) {
         threads.emplace_back(updateWithOneDoc, inputDocs[i], i, this);

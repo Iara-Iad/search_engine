@@ -35,12 +35,7 @@ void quickSort(std::vector<RelativeIndex>& vec, int start, int end) {
 SearchServer::SearchServer(InvertedIndex& idx, int& limAnswers) : index(idx), limitAnswers(limAnswers) {}
 
 std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<std::string>& queriesInput) {
-    std::vector<std::vector<RelativeIndex>> result;
-    
-    if(queriesInput.empty()) {
-        std::cout << "No requests\n";
-        return {};
-    }
+    std::vector<std::vector<RelativeIndex>> result;    
 
     for (int i = 0; i < queriesInput.size(); i++) {
         std::map<std::string, int> uniqueWords;
@@ -53,13 +48,13 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
             uniqueWords[currentWord] = 1; // creates the list of unique words
         }
 
-        for (auto word : uniqueWords) {
+        for (auto& word : uniqueWords) {
             std::vector<Entry> wordCount = index.getWordCount(word.first);
             if (wordCount.empty()) { // if no such word in all documents than not count its frequency
                 continue;
             }
             int count = 0;
-            for (auto entry : wordCount) {
+            for (auto& entry : wordCount) {
                 count += entry.count;
             }
             listOfSortedWords.emplace(count, word.first); // words in their frequency order
@@ -68,7 +63,7 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
         if (!listOfSortedWords.empty()) {        
             std::map<int, int> relevantDocIds;
             int maxAbsRelevance = 0;
-            for(auto word : listOfSortedWords) {
+            for(auto& word : listOfSortedWords) {
                 std::vector<Entry> wordCount = index.getWordCount(word.second);
                 for(auto entry : wordCount) {  
                     relevantDocIds[entry.doc_id] += entry.count; // fills the docIds map with all relevant docs and counts words from request in this docs
@@ -78,7 +73,7 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
                 }
             }
 
-            for (auto doc : relevantDocIds) {
+            for (auto& doc : relevantDocIds) {
                 RelativeIndex newPair;
                 newPair.doc_id = doc.first;
                 newPair.rank = (float)doc.second / maxAbsRelevance;

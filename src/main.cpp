@@ -12,6 +12,7 @@ int main() {
         idx.updateDocumentBase(converter.getTextDocuments());
         SearchServer searcher(idx, limAnswers);
         converter.putAnswers(searcher.search(converter.getRequests()));
+        std::cout << "Search finished successfully\n";
         return 0;
     }
     catch(const noConfigFileException& exp1) {

@@ -49,6 +49,9 @@ std::vector<std::string> ConverterJSON::getTextDocuments() {
     }
 
     configFile.close();
+    if (resourceFilesContent.empty()) {
+        std::cerr << "No files in the directory specified in config.json->files\n";
+    }
     return resourceFilesContent;
 }
 
@@ -88,6 +91,9 @@ std::vector<std::string> ConverterJSON::getRequests() {
 
     }
     requestsFile.close();
+    if (requestsList.empty()) {
+        std::cerr << "No requests specified in requests.json->requests\n";
+    }
     return requestsList;
 }
 
@@ -99,20 +105,22 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>>answers) {
         for (int i = 0; i < answers.size(); i++) {
 
             if (answers[i].empty()) {
-                answersDict["answers"]["request00" + std::to_string(i + 1)]["result"] = false;
+                answersDict["answers"]["request" + std::to_string(i + 1)]["result"] = false;
             } else {
-                answersDict["answers"]["request00" + std::to_string(i + 1)]["result"] = true;
+                answersDict["answers"]["request" + std::to_string(i + 1)]["result"] = true;
                 
                 for (int j = 0; j < answers[i].size(); j++) {
                     if (answers[i].size() == 1) {
-                        answersDict["answers"]["request00" + std::to_string(i + 1)][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
+                        answersDict["answers"]["request" + std::to_string(i + 1)][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
                     } else {
-                        answersDict["answers"]["request00" + std::to_string(i + 1)]["relevance"][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
+                        answersDict["answers"]["request" + std::to_string(i + 1)]["relevance"][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
                     }
                 }
             }
         }
 
         answersFile << std::setw(4) << answersDict;
+    } else {
+        std::cerr << "Could not create file answers.json";
     }
 }
