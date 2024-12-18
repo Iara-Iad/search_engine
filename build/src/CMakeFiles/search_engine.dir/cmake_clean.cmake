@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "C:/develVSCode/cpp-projects/searchEngine/search_engine.exe"
-  "C:/develVSCode/cpp-projects/searchEngine/search_engine.exe.manifest"
-  "C:/develVSCode/cpp-projects/searchEngine/search_engine.pdb"
+  "C:/develVSCode/diploma C++/search_engine/search_engine.exe"
+  "C:/develVSCode/diploma C++/search_engine/search_engine.exe.manifest"
+  "C:/develVSCode/diploma C++/search_engine/search_engine.pdb"
   "CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
   "CMakeFiles/search_engine.dir/converterJSON.cpp.obj.d"
   "CMakeFiles/search_engine.dir/invertedIndex.cpp.obj"

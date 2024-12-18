@@ -1,4 +1,4 @@
-# Install script for directory: C:/develVSCode/cpp-projects/searchEngine/nlohmann_json
+# Install script for directory: C:/develVSCode/diploma C++/search_engine/nlohmann_json
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -43,10 +43,22 @@ std::vector<std::string> ConverterJSON::getTextDocuments() {
             textFile.read(buffer, length);
             currentFileContent.assign(buffer, length);
             delete[] buffer;
+
+            for(int j = 0; j < currentFileContent.length(); j++) {
+                if(!isalnum(currentFileContent[j]) && currentFileContent[j] != ' ') {
+                    currentFileContent.erase(currentFileContent.begin() + j);
+                }
+                if (isupper(currentFileContent[j])) {
+                    currentFileContent[j] = tolower(currentFileContent[j]);
+                }
+            }
+
             resourceFilesContent.push_back(currentFileContent);
             textFile.close();
+        } else {
+            std::cerr << "No resource files in config.json or incorrect path of resource files\n";
         }
-    }
+    } 
 
     configFile.close();
     if (resourceFilesContent.empty()) {
@@ -121,6 +133,6 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>>answers) {
 
         answersFile << std::setw(4) << answersDict;
     } else {
-        std::cerr << "Could not create file answers.json";
+        std::cerr << "File answers.json could not be created";
     }
 }

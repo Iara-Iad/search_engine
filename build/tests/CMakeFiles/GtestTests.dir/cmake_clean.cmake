@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "C:/develVSCode/cpp-projects/searchEngine/tests/GtestTests.exe"
-  "C:/develVSCode/cpp-projects/searchEngine/tests/GtestTests.exe.manifest"
-  "C:/develVSCode/cpp-projects/searchEngine/tests/GtestTests.pdb"
+  "C:/develVSCode/diploma C++/search_engine/tests/GtestTests.exe"
+  "C:/develVSCode/diploma C++/search_engine/tests/GtestTests.exe.manifest"
+  "C:/develVSCode/diploma C++/search_engine/tests/GtestTests.pdb"
   "CMakeFiles/GtestTests.dir/__/src/converterJSON.cpp.obj"
   "CMakeFiles/GtestTests.dir/__/src/converterJSON.cpp.obj.d"
   "CMakeFiles/GtestTests.dir/__/src/invertedIndex.cpp.obj"

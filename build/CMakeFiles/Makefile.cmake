@@ -43,7 +43,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/Platform/Windows.cmake"
   "C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake"
   "C:/cmake-3.30.3-windows-x86_64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake"
-  "C:/develVSCode/cpp-projects/searchEngine/CMakeLists.txt"
+  "C:/develVSCode/diploma C++/search_engine/CMakeLists.txt"
   "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeRCCompiler.cmake"
@@ -57,12 +57,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/googletest-src/googletest/cmake/gtest.pc.in"
   "_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
   "_deps/googletest-src/googletest/cmake/internal_utils.cmake"
-  "C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/CMakeLists.txt"
-  "C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/config.cmake.in"
-  "C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/nlohmann_jsonConfigVersion.cmake.in"
-  "C:/develVSCode/cpp-projects/searchEngine/nlohmann_json/cmake/pkg-config.pc.in"
-  "C:/develVSCode/cpp-projects/searchEngine/src/CMakeLists.txt"
-  "C:/develVSCode/cpp-projects/searchEngine/tests/CMakeLists.txt"
+  "C:/develVSCode/diploma C++/search_engine/nlohmann_json/CMakeLists.txt"
+  "C:/develVSCode/diploma C++/search_engine/nlohmann_json/cmake/config.cmake.in"
+  "C:/develVSCode/diploma C++/search_engine/nlohmann_json/cmake/nlohmann_jsonConfigVersion.cmake.in"
+  "C:/develVSCode/diploma C++/search_engine/nlohmann_json/cmake/pkg-config.pc.in"
+  "C:/develVSCode/diploma C++/search_engine/src/CMakeLists.txt"
+  "C:/develVSCode/diploma C++/search_engine/tests/CMakeLists.txt"
   )
 
 # The corresponding makefile is:

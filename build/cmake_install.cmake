@@ -1,4 +1,4 @@
-# Install script for directory: C:/develVSCode/cpp-projects/searchEngine
+# Install script for directory: C:/develVSCode/diploma C++/search_engine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-build/cmake_install.cmake")
-  include("C:/develVSCode/cpp-projects/searchEngine/build/src/cmake_install.cmake")
-  include("C:/develVSCode/cpp-projects/searchEngine/build/tests/cmake_install.cmake")
-  include("C:/develVSCode/cpp-projects/searchEngine/build/nlohmann_json/cmake_install.cmake")
+  include("C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-build/cmake_install.cmake")
+  include("C:/develVSCode/diploma C++/search_engine/build/src/cmake_install.cmake")
+  include("C:/develVSCode/diploma C++/search_engine/build/tests/cmake_install.cmake")
+  include("C:/develVSCode/diploma C++/search_engine/build/nlohmann_json/cmake_install.cmake")
 
 endif()
 
@@ -61,6 +61,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/develVSCode/cpp-projects/searchEngine/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/develVSCode/diploma C++/search_engine/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

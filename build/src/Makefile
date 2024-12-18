@@ -56,10 +56,10 @@ RM = C:\cmake-3.30.3-windows-x86_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\develVSCode\cpp-projects\searchEngine
+CMAKE_SOURCE_DIR = "C:\develVSCode\diploma C++\search_engine"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\develVSCode\cpp-projects\searchEngine\build
+CMAKE_BINARY_DIR = "C:\develVSCode\diploma C++\search_engine\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,14 +141,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles C:\develVSCode\cpp-projects\searchEngine\build\src\\CMakeFiles\progress.marks
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles 0
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(CMAKE_COMMAND) -E cmake_progress_start "C:\develVSCode\diploma C++\search_engine\build\CMakeFiles" "C:\develVSCode\diploma C++\search_engine\build\src\\CMakeFiles\progress.marks"
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\develVSCode\diploma C++\search_engine\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,22 +157,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/search_engine.dir/rule:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/search_engine.dir/rule
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/search_engine.dir/rule
 .PHONY : src/CMakeFiles/search_engine.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ search_engine: src/CMakeFiles/search_engine.dir/rule
 
 # fast build rule for target.
 search_engine/fast:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/build
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/build
 .PHONY : search_engine/fast
 
 converterJSON.obj: converterJSON.cpp.obj
@@ -189,7 +189,7 @@ converterJSON.obj: converterJSON.cpp.obj
 
 # target to build an object file
 converterJSON.cpp.obj:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj
 .PHONY : converterJSON.cpp.obj
 
 converterJSON.i: converterJSON.cpp.i
@@ -197,7 +197,7 @@ converterJSON.i: converterJSON.cpp.i
 
 # target to preprocess a source file
 converterJSON.cpp.i:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.i
 .PHONY : converterJSON.cpp.i
 
 converterJSON.s: converterJSON.cpp.s
@@ -205,7 +205,7 @@ converterJSON.s: converterJSON.cpp.s
 
 # target to generate assembly for a file
 converterJSON.cpp.s:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/converterJSON.cpp.s
 .PHONY : converterJSON.cpp.s
 
 invertedIndex.obj: invertedIndex.cpp.obj
@@ -213,7 +213,7 @@ invertedIndex.obj: invertedIndex.cpp.obj
 
 # target to build an object file
 invertedIndex.cpp.obj:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj
 .PHONY : invertedIndex.cpp.obj
 
 invertedIndex.i: invertedIndex.cpp.i
@@ -221,7 +221,7 @@ invertedIndex.i: invertedIndex.cpp.i
 
 # target to preprocess a source file
 invertedIndex.cpp.i:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.i
 .PHONY : invertedIndex.cpp.i
 
 invertedIndex.s: invertedIndex.cpp.s
@@ -229,7 +229,7 @@ invertedIndex.s: invertedIndex.cpp.s
 
 # target to generate assembly for a file
 invertedIndex.cpp.s:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/invertedIndex.cpp.s
 .PHONY : invertedIndex.cpp.s
 
 main.obj: main.cpp.obj
@@ -237,7 +237,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.obj
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -245,7 +245,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -253,7 +253,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 searchServer.obj: searchServer.cpp.obj
@@ -261,7 +261,7 @@ searchServer.obj: searchServer.cpp.obj
 
 # target to build an object file
 searchServer.cpp.obj:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.obj
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.obj
 .PHONY : searchServer.cpp.obj
 
 searchServer.i: searchServer.cpp.i
@@ -269,7 +269,7 @@ searchServer.i: searchServer.cpp.i
 
 # target to preprocess a source file
 searchServer.cpp.i:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.i
 .PHONY : searchServer.cpp.i
 
 searchServer.s: searchServer.cpp.s
@@ -277,7 +277,7 @@ searchServer.s: searchServer.cpp.s
 
 # target to generate assembly for a file
 searchServer.cpp.s:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/searchServer.cpp.s
 .PHONY : searchServer.cpp.s
 
 # Help Target
@@ -317,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

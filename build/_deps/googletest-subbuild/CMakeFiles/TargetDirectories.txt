@@ -1,3 +1,3 @@
-C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
+C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir

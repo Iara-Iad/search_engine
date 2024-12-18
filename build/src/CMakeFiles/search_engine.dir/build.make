@@ -52,10 +52,10 @@ RM = C:\cmake-3.30.3-windows-x86_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\develVSCode\cpp-projects\searchEngine
+CMAKE_SOURCE_DIR = "C:\develVSCode\diploma C++\search_engine"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\develVSCode\cpp-projects\searchEngine\build
+CMAKE_BINARY_DIR = "C:\develVSCode\diploma C++\search_engine\build"
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/search_engine.dir/depend.make
@@ -70,63 +70,63 @@ include src/CMakeFiles/search_engine.dir/flags.make
 
 src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj: src/CMakeFiles/search_engine.dir/flags.make
 src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj: src/CMakeFiles/search_engine.dir/includes_CXX.rsp
-src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj: C:/develVSCode/cpp-projects/searchEngine/src/converterJSON.cpp
+src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj: C:/develVSCode/diploma\ C++/search_engine/src/converterJSON.cpp
 src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj: src/CMakeFiles/search_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj -MF CMakeFiles\search_engine.dir\converterJSON.cpp.obj.d -o CMakeFiles\search_engine.dir\converterJSON.cpp.obj -c C:\develVSCode\cpp-projects\searchEngine\src\converterJSON.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\develVSCode\diploma C++\search_engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj -MF CMakeFiles\search_engine.dir\converterJSON.cpp.obj.d -o CMakeFiles\search_engine.dir\converterJSON.cpp.obj -c "C:\develVSCode\diploma C++\search_engine\src\converterJSON.cpp"
 
 src/CMakeFiles/search_engine.dir/converterJSON.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/converterJSON.cpp.i"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\develVSCode\cpp-projects\searchEngine\src\converterJSON.cpp > CMakeFiles\search_engine.dir\converterJSON.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\develVSCode\diploma C++\search_engine\src\converterJSON.cpp" > CMakeFiles\search_engine.dir\converterJSON.cpp.i
 
 src/CMakeFiles/search_engine.dir/converterJSON.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/converterJSON.cpp.s"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\develVSCode\cpp-projects\searchEngine\src\converterJSON.cpp -o CMakeFiles\search_engine.dir\converterJSON.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\develVSCode\diploma C++\search_engine\src\converterJSON.cpp" -o CMakeFiles\search_engine.dir\converterJSON.cpp.s
 
 src/CMakeFiles/search_engine.dir/searchServer.cpp.obj: src/CMakeFiles/search_engine.dir/flags.make
 src/CMakeFiles/search_engine.dir/searchServer.cpp.obj: src/CMakeFiles/search_engine.dir/includes_CXX.rsp
-src/CMakeFiles/search_engine.dir/searchServer.cpp.obj: C:/develVSCode/cpp-projects/searchEngine/src/searchServer.cpp
+src/CMakeFiles/search_engine.dir/searchServer.cpp.obj: C:/develVSCode/diploma\ C++/search_engine/src/searchServer.cpp
 src/CMakeFiles/search_engine.dir/searchServer.cpp.obj: src/CMakeFiles/search_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/search_engine.dir/searchServer.cpp.obj"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/searchServer.cpp.obj -MF CMakeFiles\search_engine.dir\searchServer.cpp.obj.d -o CMakeFiles\search_engine.dir\searchServer.cpp.obj -c C:\develVSCode\cpp-projects\searchEngine\src\searchServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\develVSCode\diploma C++\search_engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/search_engine.dir/searchServer.cpp.obj"
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/searchServer.cpp.obj -MF CMakeFiles\search_engine.dir\searchServer.cpp.obj.d -o CMakeFiles\search_engine.dir\searchServer.cpp.obj -c "C:\develVSCode\diploma C++\search_engine\src\searchServer.cpp"
 
 src/CMakeFiles/search_engine.dir/searchServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/searchServer.cpp.i"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\develVSCode\cpp-projects\searchEngine\src\searchServer.cpp > CMakeFiles\search_engine.dir\searchServer.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\develVSCode\diploma C++\search_engine\src\searchServer.cpp" > CMakeFiles\search_engine.dir\searchServer.cpp.i
 
 src/CMakeFiles/search_engine.dir/searchServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/searchServer.cpp.s"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\develVSCode\cpp-projects\searchEngine\src\searchServer.cpp -o CMakeFiles\search_engine.dir\searchServer.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\develVSCode\diploma C++\search_engine\src\searchServer.cpp" -o CMakeFiles\search_engine.dir\searchServer.cpp.s
 
 src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj: src/CMakeFiles/search_engine.dir/flags.make
 src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj: src/CMakeFiles/search_engine.dir/includes_CXX.rsp
-src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj: C:/develVSCode/cpp-projects/searchEngine/src/invertedIndex.cpp
+src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj: C:/develVSCode/diploma\ C++/search_engine/src/invertedIndex.cpp
 src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj: src/CMakeFiles/search_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj -MF CMakeFiles\search_engine.dir\invertedIndex.cpp.obj.d -o CMakeFiles\search_engine.dir\invertedIndex.cpp.obj -c C:\develVSCode\cpp-projects\searchEngine\src\invertedIndex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\develVSCode\diploma C++\search_engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj"
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj -MF CMakeFiles\search_engine.dir\invertedIndex.cpp.obj.d -o CMakeFiles\search_engine.dir\invertedIndex.cpp.obj -c "C:\develVSCode\diploma C++\search_engine\src\invertedIndex.cpp"
 
 src/CMakeFiles/search_engine.dir/invertedIndex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/invertedIndex.cpp.i"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\develVSCode\cpp-projects\searchEngine\src\invertedIndex.cpp > CMakeFiles\search_engine.dir\invertedIndex.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\develVSCode\diploma C++\search_engine\src\invertedIndex.cpp" > CMakeFiles\search_engine.dir\invertedIndex.cpp.i
 
 src/CMakeFiles/search_engine.dir/invertedIndex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/invertedIndex.cpp.s"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\develVSCode\cpp-projects\searchEngine\src\invertedIndex.cpp -o CMakeFiles\search_engine.dir\invertedIndex.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\develVSCode\diploma C++\search_engine\src\invertedIndex.cpp" -o CMakeFiles\search_engine.dir\invertedIndex.cpp.s
 
 src/CMakeFiles/search_engine.dir/main.cpp.obj: src/CMakeFiles/search_engine.dir/flags.make
 src/CMakeFiles/search_engine.dir/main.cpp.obj: src/CMakeFiles/search_engine.dir/includes_CXX.rsp
-src/CMakeFiles/search_engine.dir/main.cpp.obj: C:/develVSCode/cpp-projects/searchEngine/src/main.cpp
+src/CMakeFiles/search_engine.dir/main.cpp.obj: C:/develVSCode/diploma\ C++/search_engine/src/main.cpp
 src/CMakeFiles/search_engine.dir/main.cpp.obj: src/CMakeFiles/search_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/search_engine.dir/main.cpp.obj"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/main.cpp.obj -MF CMakeFiles\search_engine.dir\main.cpp.obj.d -o CMakeFiles\search_engine.dir\main.cpp.obj -c C:\develVSCode\cpp-projects\searchEngine\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\develVSCode\diploma C++\search_engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/search_engine.dir/main.cpp.obj"
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/search_engine.dir/main.cpp.obj -MF CMakeFiles\search_engine.dir\main.cpp.obj.d -o CMakeFiles\search_engine.dir\main.cpp.obj -c "C:\develVSCode\diploma C++\search_engine\src\main.cpp"
 
 src/CMakeFiles/search_engine.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/main.cpp.i"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\develVSCode\cpp-projects\searchEngine\src\main.cpp > CMakeFiles\search_engine.dir\main.cpp.i
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\develVSCode\diploma C++\search_engine\src\main.cpp" > CMakeFiles\search_engine.dir\main.cpp.i
 
 src/CMakeFiles/search_engine.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/main.cpp.s"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\develVSCode\cpp-projects\searchEngine\src\main.cpp -o CMakeFiles\search_engine.dir\main.cpp.s
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\develVSCode\diploma C++\search_engine\src\main.cpp" -o CMakeFiles\search_engine.dir\main.cpp.s
 
 # Object files for target search_engine
 search_engine_OBJECTS = \
@@ -138,26 +138,26 @@ search_engine_OBJECTS = \
 # External object files for target search_engine
 search_engine_EXTERNAL_OBJECTS =
 
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/searchServer.cpp.obj
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/main.cpp.obj
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/build.make
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/linkLibs.rsp
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/objects1.rsp
-C:/develVSCode/cpp-projects/searchEngine/search_engine.exe: src/CMakeFiles/search_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develVSCode\cpp-projects\searchEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable C:\develVSCode\cpp-projects\searchEngine\search_engine.exe"
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\search_engine.dir\link.txt --verbose=$(VERBOSE)
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/searchServer.cpp.obj
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/main.cpp.obj
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/build.make
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/linkLibs.rsp
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/objects1.rsp
+C:/develVSCode/diploma\ C++/search_engine/search_engine.exe: src/CMakeFiles/search_engine.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\develVSCode\diploma C++\search_engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable \"C:\develVSCode\diploma C++\search_engine\search_engine.exe\""
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\search_engine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/search_engine.dir/build: C:/develVSCode/cpp-projects/searchEngine/search_engine.exe
+src/CMakeFiles/search_engine.dir/build: C:/develVSCode/diploma\ C++/search_engine/search_engine.exe
 .PHONY : src/CMakeFiles/search_engine.dir/build
 
 src/CMakeFiles/search_engine.dir/clean:
-	cd /d C:\develVSCode\cpp-projects\searchEngine\build\src && $(CMAKE_COMMAND) -P CMakeFiles\search_engine.dir\cmake_clean.cmake
+	cd /d C:\DEVELV~1\DIPLOM~2\SEARCH~1\build\src && $(CMAKE_COMMAND) -P CMakeFiles\search_engine.dir\cmake_clean.cmake
 .PHONY : src/CMakeFiles/search_engine.dir/clean
 
 src/CMakeFiles/search_engine.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\develVSCode\cpp-projects\searchEngine C:\develVSCode\cpp-projects\searchEngine\src C:\develVSCode\cpp-projects\searchEngine\build C:\develVSCode\cpp-projects\searchEngine\build\src C:\develVSCode\cpp-projects\searchEngine\build\src\CMakeFiles\search_engine.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\develVSCode\diploma C++\search_engine" "C:\develVSCode\diploma C++\search_engine\src" "C:\develVSCode\diploma C++\search_engine\build" "C:\develVSCode\diploma C++\search_engine\build\src" "C:\develVSCode\diploma C++\search_engine\build\src\CMakeFiles\search_engine.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/search_engine.dir/depend
 

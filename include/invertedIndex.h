@@ -16,7 +16,6 @@ struct Entry {
 class InvertedIndex {
     std::vector<std::string> docs; // the list of docucuments content
     std::map<std::string, std::vector<Entry>> freqDictionary; // frequency map
-
     friend void updateWithOneDoc(std::string doc, int docIndex, InvertedIndex* ptr);
 
   public:

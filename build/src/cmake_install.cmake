@@ -1,4 +1,4 @@
-# Install script for directory: C:/develVSCode/cpp-projects/searchEngine/src
+# Install script for directory: C:/develVSCode/diploma C++/search_engine/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -10,8 +10,10 @@ Visual Studio Code editor, MinGW 11.0.0 compiler and CMake 3.30.3 builder were u
 
 ## Short instruction
 
-To search local files, you need to specify file paths in config.json file in the files field. Each document contains no more than 1000 words with a maximum length of 100 characters each. Words consist of lowercase Latin letters and are separated by one or more spaces. You can also set the maximum number of responses per question in the max_responses field. 
+To search local files, it is necessary to specify file paths in the config.json file in the files field. Each document should contain no more than 1000 words with a maximum length of 100 characters each. The maximum number of responses per question can be set in the max_responses field, otherwise it will be set to 5. 
 
-The questions themselves should be written in the requests.json file in the requests field.
+The questions themselves should be written in the requests.json file in the requests field. As the resource files are converted to lower case, the requests are also to be in lower case.
  
 The list of relevant documents will be presented in the answers.json file in descending order of relevance. If there are no relevant documents for a query, the answer will be false.
+
+If there is no config.json file or no config field, the search will not start.

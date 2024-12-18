@@ -56,10 +56,10 @@ RM = C:\cmake-3.30.3-windows-x86_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\develVSCode\cpp-projects\searchEngine\build\_deps\googletest-subbuild
+CMAKE_SOURCE_DIR = "C:\develVSCode\diploma C++\search_engine\build\_deps\googletest-subbuild"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\develVSCode\cpp-projects\searchEngine\build\_deps\googletest-subbuild
+CMAKE_BINARY_DIR = "C:\develVSCode\diploma C++\search_engine\build\_deps\googletest-subbuild"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develVSCode\cpp-projects\searchEngine\build\_deps\googletest-subbuild\CMakeFiles C:\develVSCode\cpp-projects\searchEngine\build\_deps\googletest-subbuild\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\develVSCode\diploma C++\search_engine\build\_deps\googletest-subbuild\CMakeFiles" "C:\develVSCode\diploma C++\search_engine\build\_deps\googletest-subbuild\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develVSCode\cpp-projects\searchEngine\build\_deps\googletest-subbuild\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\develVSCode\diploma C++\search_engine\build\_deps\googletest-subbuild\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

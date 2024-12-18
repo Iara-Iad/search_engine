@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/develVSCode/cpp-projects/searchEngine
-# Build directory: C:/develVSCode/cpp-projects/searchEngine/build
+# Source directory: C:/develVSCode/diploma C++/search_engine
+# Build directory: C:/develVSCode/diploma C++/search_engine/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

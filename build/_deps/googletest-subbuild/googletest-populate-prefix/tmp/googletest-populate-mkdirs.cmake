@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION 3.5)
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-src")
-  file(MAKE_DIRECTORY "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-src")
+if(NOT EXISTS "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-src")
+  file(MAKE_DIRECTORY "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-src")
 endif()
 file(MAKE_DIRECTORY
-  "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-build"
-  "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-build"
+  "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/develVSCode/cpp-projects/searchEngine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/develVSCode/diploma C++/search_engine/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

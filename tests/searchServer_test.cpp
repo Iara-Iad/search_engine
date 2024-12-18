@@ -14,7 +14,7 @@ TEST(TestCaseSearchServer, TestSimple) {
                                                             {}};
     InvertedIndex idx;
     idx.updateDocumentBase(docs);
-    int limAnswers;
+    int limAnswers = 5;
     SearchServer srv(idx, limAnswers);
     std::vector<std::vector<RelativeIndex>> result = srv.search(request);
     ASSERT_EQ(result, expected);

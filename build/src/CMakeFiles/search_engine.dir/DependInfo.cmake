@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develVSCode/cpp-projects/searchEngine/src/converterJSON.cpp" "src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj.d"
-  "C:/develVSCode/cpp-projects/searchEngine/src/invertedIndex.cpp" "src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj.d"
-  "C:/develVSCode/cpp-projects/searchEngine/src/main.cpp" "src/CMakeFiles/search_engine.dir/main.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/main.cpp.obj.d"
-  "C:/develVSCode/cpp-projects/searchEngine/src/searchServer.cpp" "src/CMakeFiles/search_engine.dir/searchServer.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/searchServer.cpp.obj.d"
+  "C:/develVSCode/diploma C++/search_engine/src/converterJSON.cpp" "src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/converterJSON.cpp.obj.d"
+  "C:/develVSCode/diploma C++/search_engine/src/invertedIndex.cpp" "src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/invertedIndex.cpp.obj.d"
+  "C:/develVSCode/diploma C++/search_engine/src/main.cpp" "src/CMakeFiles/search_engine.dir/main.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/main.cpp.obj.d"
+  "C:/develVSCode/diploma C++/search_engine/src/searchServer.cpp" "src/CMakeFiles/search_engine.dir/searchServer.cpp.obj" "gcc" "src/CMakeFiles/search_engine.dir/searchServer.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
