@@ -16,6 +16,9 @@ https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be379
 
 FetchContent_MakeAvailable(googletest)
 
+FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz)
+FetchContent_MakeAvailable(json)
+
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
@@ -24,6 +27,5 @@ enable_testing()
 
 add_subdirectory(src)
 add_subdirectory(tests)
-add_subdirectory(nlohmann_json)
 
 

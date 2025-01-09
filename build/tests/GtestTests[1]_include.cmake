@@ -1,5 +1,0 @@
-if(EXISTS "C:/develVSCode/diploma C++/search_engine/build/tests/GtestTests[1]_tests.cmake")
-  include("C:/develVSCode/diploma C++/search_engine/build/tests/GtestTests[1]_tests.cmake")
-else()
-  add_test(GtestTests_NOT_BUILT GtestTests_NOT_BUILT)
-endif()
