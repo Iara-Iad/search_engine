@@ -5,10 +5,10 @@
 #include <map>
 
 struct Entry {
-    size_t doc_id;
+    size_t docId;
     size_t count;
     bool operator ==(const Entry& other) const { // is needed to pass tests
-      return (doc_id == other.doc_id &&
+      return (docId == other.docId &&
       count == other.count);
     }
 };

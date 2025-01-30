@@ -123,9 +123,9 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>>answers) {
                 
                 for (int j = 0; j < answers[i].size(); j++) {
                     if (answers[i].size() == 1) {
-                        answersDict["answers"]["request" + std::to_string(i + 1)][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
+                        answersDict["answers"]["request" + std::to_string(i + 1)][std::to_string(answers[i][j].docId)] = answers[i][j].rank;
                     } else {
-                        answersDict["answers"]["request" + std::to_string(i + 1)]["relevance"][std::to_string(answers[i][j].doc_id)] = answers[i][j].rank;
+                        answersDict["answers"]["request" + std::to_string(i + 1)]["relevance"][std::to_string(answers[i][j].docId)] = answers[i][j].rank;
                     }
                 }
             }

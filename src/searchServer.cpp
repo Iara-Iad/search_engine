@@ -66,16 +66,16 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
             for(auto& word : listOfSortedWords) {
                 std::vector<Entry> wordCount = index.getWordCount(word.second);
                 for(auto entry : wordCount) {  
-                    relevantDocIds[entry.doc_id] += entry.count; // fills the docIds map with all relevant docs and counts words from request in this docs
-                    if (relevantDocIds[entry.doc_id] > maxAbsRelevance) {
-                        maxAbsRelevance = relevantDocIds[entry.doc_id]; 
+                    relevantDocIds[entry.docId] += entry.count; // fills the docIds map with all relevant docs and counts words from request in this docs
+                    if (relevantDocIds[entry.docId] > maxAbsRelevance) {
+                        maxAbsRelevance = relevantDocIds[entry.docId]; 
                     }
                 }
             }
 
             for (auto& doc : relevantDocIds) {
                 RelativeIndex newPair;
-                newPair.doc_id = doc.first;
+                newPair.docId = doc.first;
                 newPair.rank = (float)doc.second / maxAbsRelevance;
                 relativeIndexVec.push_back(newPair); // creates an unsorted RelativeIndex vector with filled docIds and their relevance
             }

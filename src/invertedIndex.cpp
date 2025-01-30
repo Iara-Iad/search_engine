@@ -13,16 +13,18 @@ void updateWithOneDoc(std::string doc, int docIndex, InvertedIndex* ptr) {
     while (!ss.eof()) {
         ss >> word;
         bool indexPresent = false;
+        bool wordPresent = false;
 
         dictAccess.lock();
         if(ptr->freqDictionary.count(word) > 0) {
+            wordPresent = true;
             for (int i = 0; i < ptr->freqDictionary[word].size(); i++) {
-                if (ptr->freqDictionary[word][i].doc_id == docIndex) {
+                if (ptr->freqDictionary[word][i].docId == docIndex) {
                     ptr->freqDictionary[word][i].count += 1;
                     dictAccess.unlock();
                     indexPresent = true;
                     break;
-                }
+                } 
             }
         }
         dictAccess.unlock();
@@ -30,9 +32,19 @@ void updateWithOneDoc(std::string doc, int docIndex, InvertedIndex* ptr) {
         if (!indexPresent) {
             Entry entry;
             entry.count = 1;
-            entry.doc_id = docIndex;
+            entry.docId = docIndex;
             dictAccess.lock();
-            ptr->freqDictionary[word].push_back(entry);
+            if(wordPresent) {
+                auto pos = ptr->freqDictionary[word].begin();
+                for (int i = 0; i < ptr->freqDictionary[word].size(); i++) {
+                    if(ptr->freqDictionary[word][i].docId < docIndex) {
+                        pos++;
+                    } 
+                }
+                ptr->freqDictionary[word].insert(pos, entry);
+            } else {
+                ptr->freqDictionary[word].push_back(entry);
+            }
             dictAccess.unlock();
         }
     }

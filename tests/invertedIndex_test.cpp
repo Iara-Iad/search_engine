@@ -7,8 +7,8 @@ void TestInvertedIndexFunctionality(const std::vector<std::string>& docs, const 
     InvertedIndex idx;
     idx.updateDocumentBase(docs);
     for(auto& request : requests) {
-        std::vector<Entry> word_count = idx.getWordCount(request);
-        result.push_back(word_count);
+        std::vector<Entry> wordCount = idx.getWordCount(request);
+        result.push_back(wordCount);
     }
     ASSERT_EQ(result, expected);
 }

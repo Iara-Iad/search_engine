@@ -5,10 +5,10 @@
 #include "invertedIndex.h"
 
 struct RelativeIndex {
-    int doc_id;
+    int docId;
     float rank;
     bool operator ==(const RelativeIndex& other) const { //needed to pass tests
-      return (doc_id == other.doc_id && rank == other.rank);
+      return (docId == other.docId && rank == other.rank);
     }
 };
 
