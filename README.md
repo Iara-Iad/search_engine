@@ -17,3 +17,7 @@ The questions themselves should be written in the requests.json file in the requ
 The list of relevant documents will be presented in the answers.json file in descending order of relevance. If there are no relevant documents for a query, the answer will be false.
 
 If there is no config.json file or no config field, the search will not start.
+
+## Project build
+
+The minimum required version of CMake for the project is 3.5.0. If there is CMake Deprecation Warning in CMakeLists of fetched libraries just update the version up to 3.5.0. 
